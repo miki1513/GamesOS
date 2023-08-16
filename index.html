@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+ ___       __   ________  ___  _________        _____ ______   ________  ___       
+|\  \     |\  \|\   __  \|\  \|\___   ___\     |\   _ \  _   \|\   __  \|\  \      
+\ \  \    \ \  \ \  \|\  \ \  \|___ \  \_|     \ \  \\\__\ \  \ \  \|\  \ \  \     
+ \ \  \  __\ \  \ \   __  \ \  \   \ \  \       \ \  \\|__| \  \ \   __  \ \  \    
+  \ \  \|\__\_\  \ \  \ \  \ \  \   \ \  \       \ \  \    \ \  \ \  \|\  \ \__\   
+   \ \____________\ \__\ \__\ \__\   \ \__\       \ \__\    \ \__\ \_______\|__|   
+    \|____________|\|__|\|__|\|__|    \|__|        \|__|     \|__|\|_______|   ___ 
+                                                                              |\__\
+                                                                              \|__|
+                                                                                   
+      dont steal this you skid.
+      version 1.0 SP1
+      source code: coming soon
+-->
+<html>
+<head>
+  <title>booting up...</title>
+  <link rel="stylesheet" href="https://unpkg.com/98.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #1a1c2c;
+      color: #fff;
+    }
+
+    .bootup-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo1 {
+      width: 120px;
+      height: 120px;
+      background-image: url("https://cdn.discordapp.com/attachments/1128073711438802955/1131996967900287026/image.png");
+      background-size: cover;
+      background-position: center;
+      animation: rotateLogo 7s linear infinite;
+    }
+
+    .loading-text {
+      margin-top: 10px;
+      font-size: 51px;
+      animation: fadeInOut 2s ease-in-out infinite;
+    }
+        .credit {
+      margin-top: 10px;
+      font-size: px;
+      animation: fadeInOut 1s ease-in-out infinite;
+    }
+
+    @keyframes rotateLogo {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes fadeInOut {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bootup-container">
+    <div class="logo1"></div>
+        <div class="logo2"></div>
+            <div class="logo3"></div>
+    <div class="loading-text">4skep isnt a developer</div>
+        <div class="credit">Credit to 4skep for making this!</div>
+  </div>
+
+  <script>
+   setTimeout(() => {
+      window.location.href = "desktop.html";
+    }, 5000);
+  </script>
+</body>
+</html>
